@@ -1,14 +1,12 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import { GrandHotel_400Regular, useFonts } from '@expo-google-fonts/grand-hotel'
-import { isLoaded } from 'expo-font'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { faHeart, faPaperPlane } from '@fortawesome/free-regular-svg-icons'
 
 
 const NavbarComponent = () => {
-CONST [isLoaded] = useFonts ({
+const [isLoaded] = useFonts ({
     GrandHotel_400Regular
 });
 
@@ -35,7 +33,8 @@ if(!isLoaded) {
 
 const Style =StyleSheet.create({
     HeaderContainer: {
-        marginTop: 50,
+        marginTop: 45,
+        paddingLeft: 10,
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
